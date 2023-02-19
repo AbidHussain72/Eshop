@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { SellerDetails } from '../data_type';
+import { LoginDetails, SellerDetails } from '../data_type';
 import { BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
 @Injectable({
@@ -25,5 +25,17 @@ export class SellerService {
       this.isSellerLoggedIn.next(true);
       this.router.navigate(['seller_home']);
     }
+  }
+  sellerLogin(data:LoginDetails){
+    // console.log(data)
+    this.http.get(
+      `http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
+      { observe: 'response' }
+    ).subscribe((result:any)=>{
+      if(result && result.body && result.body.length){
+        console.warn("Seller Logged In")
+
+      }
+    })
   }
 }

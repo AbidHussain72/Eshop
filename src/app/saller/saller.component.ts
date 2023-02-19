@@ -9,10 +9,21 @@ import { SellerDetails } from '../data_type';
 })
 export class SallerComponent {
   constructor(private seller: SellerService, private router: Router) {}
+  showLoginFlag = false;
   ngOnInit(): void {
     this.seller.reloadSeller();
   }
   signUp(data: SellerDetails): void {
     this.seller.userSignUp(data);
+  }
+  login(data: SellerDetails): void {
+    this.seller.sellerLogin(data);
+    // console.log(data)
+  }
+  showLogin() {
+    this.showLoginFlag = true;
+  }
+  showSingUp() {
+    this.showLoginFlag = false;
   }
 }

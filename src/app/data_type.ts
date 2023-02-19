@@ -4,3 +4,7 @@ export interface SellerDetails{
  type:string,
  password:string
 }
+export interface LoginDetails {
+  password: string;
+  email: string;
+}
