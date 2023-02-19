@@ -1,0 +1,60 @@
+.header{
+ display: flex;
+ width: 100%;
+ height: 70px;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 20px;
+ background-color: #fff;
+ font-family: sans-serif;
+ /* position: fixed; */
+ box-shadow: 0 0 3px  #9a9a9a;
+}
+.header .brandName{
+ width: 20%;
+}
+.brandName h1{
+ color: #ca6702;
+}
+.header .searchBar{
+ width: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.searchBar #search-input{
+ width: 80%;
+ height: 30px;
+ border-radius: 16px 0px 0px 16px;
+ border: 1px solid #ccc;
+ box-shadow: inset 0 0 3px  #dcdcdc;
+ padding: 0 7px;
+}
+.searchBar #search-input:focus{
+ outline: 1px solid #c1c1c1;
+}
+.searchBar button{
+ height: 30px;
+ padding: 0 5px;
+ border: 1px solid #ccc;
+ border-left: none;
+ border-radius: 0px 16px 16px 0px;
+ cursor: pointer;
+}
+.header .navLinks{
+width: 30%;
+}
+.navLinks ul{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ text-transform: capitalize;
+}
+.navLinks ul li{
+ list-style: none;
+ display: block;
+}
+.navLinks ul li a{
+ color: #ca6702;
+ text-decoration: none;
+}

@@ -1,0 +1,54 @@
+.seller__container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+}
+.seller__container .signUp__form{
+ width: 30%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 40px;
+}
+.seller__container h1{
+ color: #ca6702;
+ font-family: sans-serif;
+}
+.seller__container .seller_form{
+ margin-top: 20px;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ 
+}
+.seller__container .seller_form .form__group{
+ display: flex;
+ flex-direction: column;
+}
+.seller_form .form__group label{
+ font-family: sans-serif;
+ color: #ca6702;
+}
+.seller_form .form__group input{
+ height: 30px;
+ border: 1px solid #ca6702;
+ margin: 5px 0 10px 0px;
+ padding-left: 10px;
+ color: #ca6702;
+ border-radius: 7px;
+}
+.seller_form .form__group input:focus{
+ outline: 1px solid #ca66029d;
+}
+.seller_form .sign_up_btn{
+ width: 30%;
+ padding: 7px;
+ border-radius: 5px;
+ color: #fff;
+ background-color: #ca6702;
+ border: none;
+ cursor: pointer;
+ box-shadow: 0 0 5px #ca66029d;
+}

@@ -1,0 +1,109 @@
+{
+  "seller": [
+    {
+      "name": "Abid Hussain",
+      "email": "abidhussain72145@gmail.com",
+      "bType": "Electricals",
+      "password": "welcome@1",
+      "id": 1
+    },
+    {
+      "name": "Haider Ali",
+      "email": "royalshyder555@gmail.com",
+      "type": "footwear",
+      "password": "haider@123",
+      "id": 2
+    },
+    {
+      "name": "Suriya ",
+      "email": "sutriya@test.com",
+      "type": "footwear",
+      "password": "welcome@1",
+      "id": 3
+    },
+    {
+      "name": "Shanu",
+      "email": "royalshyder555@gmail.com",
+      "type": "Clothes",
+      "password": "shanu@123",
+      "id": 4
+    },
+    {
+      "name": "Shanu",
+      "email": "royalshyder555@gmail.com",
+      "type": "Clothes",
+      "password": "shanu@123",
+      "id": 5
+    },
+    {
+      "name": "Rani Jaaan",
+      "email": "rani@test.com",
+      "type": "Any",
+      "password": "welcome@1",
+      "id": 6
+    },
+    {
+      "name": "Shanu Jaan",
+      "email": "jaanshabu72145@gmail.com",
+      "type": "Any",
+      "password": "abc@123",
+      "id": 7
+    },
+    {
+      "name": "Nasir Hussain",
+      "email": "Nasir@test.com",
+      "type": "Electricals",
+      "password": "abc@123",
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "",
+      "type": "",
+      "password": "",
+      "id": 9
+    },
+    {
+      "name": "Shanu",
+      "email": "rani@test.com",
+      "type": "Clothes",
+      "password": "haider@123",
+      "id": 10
+    },
+    {
+      "name": "Nasir Hussain",
+      "email": "abidhussain72145@gmail.com",
+      "type": "Any",
+      "password": "abc@123",
+      "id": 11
+    },
+    {
+      "name": "Rani Jaaan",
+      "email": "rani@test.com",
+      "type": "Electricals",
+      "password": "shanu@123",
+      "id": 12
+    },
+    {
+      "name": "Nasir Hussain",
+      "email": "sutriya@test.com",
+      "type": "Any",
+      "password": "haider@123",
+      "id": 13
+    },
+    {
+      "name": "Shanu",
+      "email": "royalshyder555@gmail.com",
+      "type": "Any",
+      "password": "abc@123",
+      "id": 14
+    },
+    {
+      "name": "Nasir Hussain",
+      "email": "70066629339",
+      "type": "footwear",
+      "password": "shanu@123",
+      "id": 15
+    }
+  ]
+}
