@@ -10,6 +10,7 @@ import { SellerDetails } from '../data_type';
 export class SallerComponent {
   constructor(private seller: SellerService, private router: Router) {}
   showLoginFlag = false;
+  sellerAuthErr:string = ""
   ngOnInit(): void {
     this.seller.reloadSeller();
   }
@@ -17,10 +18,19 @@ export class SallerComponent {
     this.seller.userSignUp(data);
   }
   login(data: SellerDetails): void {
+    this.sellerAuthErr = ""
     this.seller.sellerLogin(data);
     // console.log(data)
+    this.seller.isLoginError.subscribe((error)=>{
+      if(error){
+        this.sellerAuthErr = "Email or Password doesn't match";
+      }else{
+
+      }
+    })
   }
   showLogin() {
+    this.sellerAuthErr = '';
     this.showLoginFlag = true;
   }
   showSingUp() {

@@ -31,8 +31,8 @@
     <!-- Login Start -->
     <div *ngIf="showLoginFlag" class="login__form">
      <h1>Login Form</h1>
+        <span class="errorMsg">{{sellerAuthErr}}</span>
         <form #sellerForm="ngForm" (ngSubmit)="login(sellerForm.value)"  class="seller_form">
-        
          <div class="form__group">
           <label for="">Email</label>
           <input type="text" ngModel name="email" placeholder="Enter email">

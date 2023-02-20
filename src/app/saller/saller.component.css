@@ -11,8 +11,8 @@
  flex-direction: column;
  justify-content: center;
  align-items: center;
- border: 1px solid #ffffff;
- background-color: #fbfbfb;
+ border: 1px solid #fcfcfc;
+ background-color: #f4f4f4;
  padding: 20px;
  border-radius: 5px;
  box-shadow: 0 0 5px #ccc;
@@ -43,7 +43,7 @@
  margin: 5px 0 10px 0px;
  padding-left: 10px;
  color: #ca6702;
- border-radius: 7px;
+ border-radius: 3px;
 }
 .seller_form .form__group input:focus{
  outline: 1px solid #ca66029d;
@@ -55,7 +55,7 @@
 }
 .button_div span{
  font-family: sans-serif;
- color: rgb(67, 123, 253);
+ color: rgb(63, 110, 219);
 }
 .button_div span:hover{
  text-decoration: underline;
@@ -70,4 +70,9 @@
  border: none;
  cursor: pointer;
  box-shadow: 0 0 5px #ca66029d;
+}
+.errorMsg{
+ margin-top: 10px;
+ color: #fb2e00;
+ font-family: sans-serif;
 }
