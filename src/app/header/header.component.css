@@ -13,8 +13,9 @@
 .header .brandName{
  width: 20%;
 }
-.brandName h1{
+.brandName h1 a{
  color: #ca6702;
+ text-decoration: none;
 }
 .header .searchBar{
  width: 50%;
@@ -57,4 +58,16 @@ width: 30%;
 .navLinks ul li a{
  color: #ca6702;
  text-decoration: none;
+}
+a.logoutBtn{
+ background-color: #fb5b2f;
+ color: #fff !important;
+ padding: 5px 7px;
+ border-radius:3px;
+ box-shadow:0 0 3px #ccc;
+ cursor: pointer;
+ transition: background .5s ease;
+}
+a.logoutBtn:hover{
+ background-color: #f77f5e;
 }

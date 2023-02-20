@@ -29,25 +29,7 @@
  width: 100%;
  
 }
-.seller__container .seller_form .form__group{
- display: flex;
- flex-direction: column;
-}
-.seller_form .form__group label{
- font-family: sans-serif;
- color: #ca6702;
-}
-.seller_form .form__group input{
- height: 30px;
- border: 1px solid #ca6702;
- margin: 5px 0 10px 0px;
- padding-left: 10px;
- color: #ca6702;
- border-radius: 3px;
-}
-.seller_form .form__group input:focus{
- outline: 1px solid #ca66029d;
-}
+
 .button_div{
  display: flex;
  justify-content: space-between;
@@ -76,3 +58,4 @@
  color: #fb2e00;
  font-family: sans-serif;
 }
+

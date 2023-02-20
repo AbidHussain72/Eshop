@@ -1,12 +1,18 @@
 <nav class="header">
- <div class="brandName"> <h1>E.SHOP</h1> </div>
- <div class="searchBar"><input type="search" name="" id="search-input" placeholder="Search...."><button type="search">Search</button> </div>
- <div class="navLinks">
-  <ul>
+ <div class="brandName"> <h1> <a routerLink="/">E.SHOP</a></h1> </div>
+ <div *ngIf="menuType === 'default'" class="searchBar"><input type="search" name="" id="search-input" placeholder="Search...."><button type="search">Search</button> </div>
+ <div class="navLinks" [ngSwitch]="menuType">
+  <ul *ngSwitchCase="'default'">
    <li><a routerLink="">Home</a></li>
    <li><a routerLink="saller">Become a seller </a></li>
    <li><a href="">Login</a></li>
    <li><a href="">Mobile App</a></li>
+  </ul>
+  <ul *ngSwitchCase="'seller'">
+   <li><a routerLink="seller_home">Product List</a></li>
+   <li><a routerLink="seller-add-product">Add Product </a></li>
+   <li><a href="">{{sellerName | titlecase}}</a></li>
+   <li><a class="logoutBtn" (click)="logout()" >Logout</a></li>
   </ul>
  </div>
 </nav>

@@ -9,3 +9,23 @@ body{
  width: 100vw;
  height: 100vh;
 }
+.form__group{
+ display: flex;
+ flex-direction: column;
+}
+
+.form__group input:focus{
+ outline: 1px solid #ca66029d;
+}
+.form__group label{
+ font-family: sans-serif;
+ color: #ca6702;
+}
+.form__group input{
+ height: 30px;
+ border: 1px solid #ca6702;
+ margin: 5px 0 10px 0px;
+ padding-left: 10px;
+ color: #ca6702;
+ border-radius: 3px;
+}
