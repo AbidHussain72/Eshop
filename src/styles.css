@@ -14,18 +14,38 @@ body{
  flex-direction: column;
 }
 
-.form__group input:focus{
+.form__group input:focus,.form__group textarea:focus{
  outline: 1px solid #ca66029d;
 }
 .form__group label{
  font-family: sans-serif;
  color: #ca6702;
 }
-.form__group input{
+.form__group input,.form__group textarea{
  height: 30px;
  border: 1px solid #ca6702;
  margin: 5px 0 10px 0px;
  padding-left: 10px;
  color: #ca6702;
  border-radius: 3px;
+}
+.seller_form .sign_up_btn,.seller_form .login_btn, .productBtn{
+ width: 30%;
+ padding: 7px;
+ border-radius: 5px;
+ color: #fff;
+ background-color: #ca6702;
+ border: none;
+ cursor: pointer;
+ box-shadow: 0 0 5px #ca66029d;
+}
+.successMessage{
+ color: #fff;
+ font-family: sans-serif;
+ border: 1px solid #01a72ef9;
+ padding: 10px ;
+ background-color: rgba(2, 196, 2, 0.396);
+ margin-bottom: 10px;
+ border-radius: 4px;
+ transition: all .7s ease;
 }

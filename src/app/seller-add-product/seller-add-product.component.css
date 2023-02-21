@@ -1,25 +1,26 @@
 .seller_product_wrapper{
  width: 100vw;
  display: flex;
- justify-content: space-between;
+ /* justify-content: space-between; */
+ align-items: center;
  height: 100vh;
-}
-.leftSide{
- padding: 10px;
- width: 30%;
- height: auto;
- display: flex;
  flex-direction: column;
 }
+
 .addTitle{
  font-family: sans-serif;
  color: #000;
  margin-bottom: 20px;
 }
 .addProductForm{
+width: 70%;
 border: 1px solid #fcfcfc;
 background-color: #f4f4f4;
 padding: 10px;
 box-shadow: 0 0 5px #ccc;
-
+display: flex;
+justify-content: space-between;
+}
+.addProductForm .col{
+ width: 49%;
 }

@@ -56,7 +56,6 @@
       "password": "abc@123",
       "id": 8
     },
-    
     {
       "name": "Shanu",
       "email": "rani@test.com",
@@ -98,6 +97,80 @@
       "type": "footwear",
       "password": "shanu@123",
       "id": 15
+    }
+  ],
+  "Products": [
+    {
+      "productName": "Mac Book",
+      "productPrice": "65000",
+      "productDescription": "Cool and Slim",
+      "productCategory": "Laptop",
+      "productColor": "Grey",
+      "productUrl": "https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg",
+      "id": 1
+    },
+    {
+      "productName": "Mac Book Pro",
+      "productPrice": "100000",
+      "productDescription": "So Cool Product",
+      "productCategory": "Laptop",
+      "productColor": "White",
+      "productUrl": "https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg",
+      "id": 2
+    },
+    {
+      "productName": "Mac Book Pro",
+      "productPrice": "100000",
+      "productDescription": "NIce Product",
+      "productCategory": "Laptop",
+      "productColor": "Grey",
+      "productUrl": "https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg",
+      "id": 3
+    },
+    {
+      "productName": "I Phone 11",
+      "productPrice": "50000",
+      "productDescription": "NIce Mobile Phone",
+      "productCategory": "Mobile",
+      "productColor": "Green",
+      "productUrl": "https://yacineaziz.com/wp-content/uploads/2022/07/APPLE-iPhone-11-White-64-GB.jpg",
+      "id": 4
+    },
+    {
+      "productName": "Samsung 23 ultra",
+      "productPrice": "150000",
+      "productDescription": "Nice and Cool Product",
+      "productCategory": "Mobile",
+      "productColor": "White",
+      "productUrl": "https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg",
+      "id": 5
+    },
+    {
+      "productName": "Samsung 23 ultra",
+      "productPrice": "100000",
+      "productDescription": "Nice",
+      "productCategory": "Mobile",
+      "productColor": "Grey",
+      "productUrl": "https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg",
+      "id": 6
+    },
+    {
+      "productName": "Samsung 23 ultra",
+      "productPrice": "50000",
+      "productDescription": "Cool",
+      "productCategory": "Laptop",
+      "productColor": "Green",
+      "productUrl": "https://yacineaziz.com/wp-content/uploads/2022/07/APPLE-iPhone-11-White-64-GB.jpg",
+      "id": 7
+    },
+    {
+      "productName": "Mac Book Pro",
+      "productPrice": "150000",
+      "productDescription": "Cool",
+      "productCategory": "Laptop",
+      "productColor": "White",
+      "productUrl": "https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg",
+      "id": 8
     }
   ]
 }

@@ -1,0 +1,12 @@
+table{
+ width: 100%;
+ border-collapse: collapse;
+}
+table td, table th{
+ border: 1px solid #ca6702;
+ padding: 10px;
+}
+table td img{
+ width: 100px;
+ height: 100px;
+}

@@ -43,16 +43,7 @@
  text-decoration: underline;
  cursor: pointer;
 }
-.seller_form .sign_up_btn,.seller_form .login_btn{
- width: 30%;
- padding: 7px;
- border-radius: 5px;
- color: #fff;
- background-color: #ca6702;
- border: none;
- cursor: pointer;
- box-shadow: 0 0 5px #ca66029d;
-}
+
 .errorMsg{
  margin-top: 10px;
  color: #fb2e00;

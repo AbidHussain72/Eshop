@@ -8,3 +8,11 @@ export interface LoginDetails {
   password: string;
   email: string;
 }
+export interface Product {
+  productName: string;
+  productPrice: number;
+  productColor: string;
+  productDescription: string;
+  productCategory: string;
+  productUrl: string;
+}
