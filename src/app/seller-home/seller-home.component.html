@@ -9,6 +9,7 @@
     <th>Color</th>
     <th>Price</th>
     <th>Description</th>
+    <th>Actions</th>
    </tr>
   </thead>
   <tbody>
@@ -18,7 +19,8 @@
     <td>{{item.productCategory}}</td>
     <td>{{item.productColor}}</td>
     <td>{{item.productPrice}}</td>
-    <td>{{item.productColor}}</td>
+    <td>{{item.productDescription}}</td>
+    <td><fa-icon class="delIcon" (click)="deleteItem(item.id)" [icon]="faTrash"></fa-icon> <fa-icon class="editIcon" [icon]="faEdit"></fa-icon> </td>
    </tr>
   </tbody>
  </table>

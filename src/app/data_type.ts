@@ -9,10 +9,12 @@ export interface LoginDetails {
   email: string;
 }
 export interface Product {
+  description: any;
   productName: string;
   productPrice: number;
   productColor: string;
   productDescription: string;
   productCategory: string;
   productUrl: string;
+  id:number;
 }
