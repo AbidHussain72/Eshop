@@ -15,18 +15,18 @@ body{
 }
 
 .form__group input:focus,.form__group textarea:focus{
- outline: 1px solid #ca66029d;
+ outline: 1px solid #386641c4;
 }
 .form__group label{
  font-family: sans-serif;
- color: #ca6702;
+ color: #386641;
 }
 .form__group input,.form__group textarea{
  height: 30px;
- border: 1px solid #ca6702;
+ border: 1px solid #386641;
  margin: 5px 0 10px 0px;
  padding-left: 10px;
- color: #ca6702;
+ color: #386641;
  border-radius: 3px;
 }
 .seller_form .sign_up_btn,.seller_form .login_btn, .productBtn{
@@ -34,10 +34,10 @@ body{
  padding: 7px;
  border-radius: 5px;
  color: #fff;
- background-color: #ca6702;
+ background-color: #386641;
  border: none;
  cursor: pointer;
- box-shadow: 0 0 5px #ca66029d;
+ box-shadow: 0 0 5px #386641a0;
 }
 .successMessage{
  color: #fff;

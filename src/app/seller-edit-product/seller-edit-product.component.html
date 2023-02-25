@@ -1,0 +1,66 @@
+<div class="seller_product_wrapper">
+  <h1 class="updateTitle">Update Product</h1>
+  <h4  class="successMessage">{{updateMessage}}</h4>
+  <form #addProduct="ngForm" (ngSubmit)="updateProduct(addProduct.value)" class="updateProductForm">
+    <div class="col">
+      <div class="form__group">
+        <label for="">Product Name</label>
+        <input
+          type="text"
+          ngModel="{{productDetail?.productName}}"
+          name="productName"
+          placeholder="Enter product name"
+        />
+      </div>
+      <div class="form__group">
+        <label for="">Product Price</label>
+        <input
+          type="text"
+          ngModel="{{productDetail?.productPrice}}"
+          name="productPrice"
+          placeholder="Enter product Price"
+          
+        />
+      </div>
+      <div class="form__group">
+        <label for="">Product Description</label>
+        <textarea
+          type="text"
+          ngModel="{{productDetail?.productDescription}}"
+          name="productDescription"
+          placeholder="Enter product Description"
+        ></textarea>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form__group">
+        <label for="">Product Category</label>
+        <input
+          type="text"
+          ngModel="{{productDetail?.productCategory}}"
+          name="productCategory"
+          placeholder="Enter product Category"
+        />
+      </div>
+      <div class="form__group">
+        <label for="">Product Color</label>
+        <input
+          type="text"
+          ngModel="{{productDetail?.productColor}}"
+          name="productColor"
+          placeholder="Enter product Color"
+        />
+      </div>
+      <div class="form__group">
+        <label for="">Product Image Url</label>
+        <input
+          type="text"
+          ngModel="{{productDetail?.productUrl}}"
+          name="productUrl"
+          placeholder="Enter product Url"
+        />
+      </div>
+      <button class="productBtn">Update</button>
+    </div>
+  </form>
+</div>

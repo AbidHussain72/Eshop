@@ -1,5 +1,6 @@
 <div class="productsPage">
  <h1 class="Heading">All Products</h1>
+
  <table>
   <thead>
    <tr>
@@ -20,7 +21,8 @@
     <td>{{item.productColor}}</td>
     <td>{{item.productPrice}}</td>
     <td>{{item.productDescription}}</td>
-    <td><fa-icon class="delIcon" (click)="deleteItem(item.id)" [icon]="faTrash"></fa-icon> <fa-icon class="editIcon" [icon]="faEdit"></fa-icon> </td>
+    <td><fa-icon class="delIcon" (click)="deleteItem(item.id)" [icon]="faTrash"></fa-icon>
+     <a routerLink="/seller-edit-product/{{item.id}}"><fa-icon class="editIcon" [icon]="faEdit"></fa-icon></a>  </td>
    </tr>
   </tbody>
  </table>
