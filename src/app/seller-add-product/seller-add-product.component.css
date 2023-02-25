@@ -14,12 +14,13 @@
 }
 .addProductForm{
 width: 70%;
-border: 1px solid #fcfcfc;
+border: 2px solid #fcfcfc;
 background-color: #f4f4f4;
 padding: 10px;
 box-shadow: 0 0 5px #ccc;
 display: flex;
 justify-content: space-between;
+border-radius: 4px;
 }
 .addProductForm .col{
  width: 49%;
