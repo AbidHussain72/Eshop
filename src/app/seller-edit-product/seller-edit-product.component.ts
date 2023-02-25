@@ -10,6 +10,7 @@ import { ProductsService } from '../services/products.service';
 })
 export class SellerEditProductComponent {
   updateMessage = "";
+  showMsg = false;
   constructor(
     private route: ActivatedRoute,
     private product: ProductsService,
@@ -29,6 +30,7 @@ export class SellerEditProductComponent {
       data.id = this.productDetail?.id
     }
     this.product.productUpdate(data).subscribe((result) => {
+      this.showMsg = true;
       this.updateMessage = "Product Updated successfully"
       setTimeout(()=>this.router.navigateByUrl('seller_home'),3000);
     });

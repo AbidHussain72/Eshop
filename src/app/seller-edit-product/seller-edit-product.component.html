@@ -1,6 +1,6 @@
 <div class="seller_product_wrapper">
   <h1 class="updateTitle">Update Product</h1>
-  <h4  class="successMessage">{{updateMessage}}</h4>
+  <h4 *ngIf="showMsg" class="successMessage">{{updateMessage}}</h4>
   <form #addProduct="ngForm" (ngSubmit)="updateProduct(addProduct.value)" class="updateProductForm">
     <div class="col">
       <div class="form__group">
