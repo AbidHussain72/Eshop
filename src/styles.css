@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *{
  padding: 0;
  margin: 0;
@@ -9,14 +12,14 @@ body{
  width: 100vw;
  height: 100vh;
 }
-.form__group{
+/* .form__group{
  display: flex;
  flex-direction: column;
 }
 
-.form__group input:focus,.form__group textarea:focus{
+/* .form__group input:focus,.form__group textarea:focus{
  outline: 1px solid #386641c4;
-}
+} */
 .form__group label{
  font-family: sans-serif;
  color: #386641;
@@ -38,7 +41,7 @@ body{
  border: none;
  cursor: pointer;
  box-shadow: 0 0 5px #386641a0;
-}
+} */
 .successMessage{
  color: #fff;
  font-family: sans-serif;

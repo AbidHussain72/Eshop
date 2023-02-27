@@ -1,27 +1,26 @@
-<div class="productsPage">
+<div class="relative overflow-x-auto">
  <h1 class="Heading">All Products</h1>
-
- <table>
-  <thead>
+ <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+  <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
    <tr>
-    <th>Image</th>
-    <th>Name</th>
-    <th>Category</th>
-    <th>Color</th>
-    <th>Price</th>
-    <th>Description</th>
-    <th>Actions</th>
+    <th class="px-6 py-3">Image</th>
+    <th class="px-6 py-3">Name</th>
+    <th class="px-6 py-3">Category</th>
+    <th class="px-6 py-3">Color</th>
+    <th class="px-6 py-3">Price</th>
+    <th class="px-6 py-3">Description</th>
+    <th class="px-6 py-3">Actions</th>
    </tr>
   </thead>
   <tbody>
-   <tr *ngFor="let item of productList">
-    <td> <img src="{{item.productUrl}}" alt=""> </td>
-    <td>{{item.productName}}</td>
-    <td>{{item.productCategory}}</td>
-    <td>{{item.productColor}}</td>
-    <td>{{item.productPrice}}</td>
-    <td>{{item.productDescription}}</td>
-    <td><fa-icon class="delIcon" (click)="deleteItem(item.id)" [icon]="faTrash"></fa-icon>
+   <tr *ngFor="let item of productList" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <td class="px-6 py-4"> <img src="{{item.productUrl}}" alt=""> </td>
+    <td class="px-6 py-4">{{item.productName}}</td>
+    <td class="px-6 py-4">{{item.productCategory}}</td>
+    <td class="px-6 py-4">{{item.productColor}}</td>
+    <td class="px-6 py-4">{{item.productPrice}}</td>
+    <td class="px-6 py-4">{{item.productDescription}}</td>
+    <td class="px-6 py-4"><fa-icon class="delIcon" (click)="deleteItem(item.id)" [icon]="faTrash"></fa-icon>
      <a routerLink="/seller-edit-product/{{item.id}}"><fa-icon class="editIcon" [icon]="faEdit"></fa-icon></a>  </td>
    </tr>
   </tbody>

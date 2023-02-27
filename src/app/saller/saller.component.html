@@ -1,26 +1,29 @@
-<div class="seller__container">
+<div class="flex items-center h-full w-full">
     <!-- Sign Up Start -->
-    <div *ngIf="!showLoginFlag" class="signUp__form">
-     <h1>Sign Up Form</h1>
-        <form #sellerForm="ngForm"  (ngSubmit)="signUp(sellerForm.value)"  class="seller_form">
-         <div class="form__group">
-          <label for="">Full Name</label>
-          <input type="text" ngModel name="name" placeholder="Enter full name" >
+    <div *ngIf="!showLoginFlag" class="w-full bg-white rounded shadow-lg p-8 mt-24 m-4 md:max-w-sm md:mx-auto" >
+     <h1 class="block w-full text-center text-grey-darkest mb-6">Sign Up Form</h1>
+        <form #sellerForm="ngForm"  (ngSubmit)="signUp(sellerForm.value)"  class="mb-4 w-md">
+         <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="">Full Name</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  id="username"  type="text" ngModel name="name" placeholder="Enter full name" >
          </div>
-         <div class="form__group">
-          <label for="">Email</label>
-          <input type="text" ngModel name="email"  placeholder="Enter email" >
+         <div class="mb-4"> 
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="">Email</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" ngModel name="email"  placeholder="Enter email" >
          </div>
-         <div class="form__group">
-          <label for="">Business Type</label>
-          <input type="text" ngModel name="type" placeholder="Enter business type" >
+         <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="">Business Type</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" ngModel name="type" placeholder="Enter business type" >
          </div>
-         <div class="form__group">
-          <label for="">Password</label>
-          <input type="text" ngModel name="password" placeholder="Enter password" >
+         <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="">Password</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" ngModel name="password" placeholder="Enter password" >
          </div>
          <div class="button_div">
-             <button class="sign_up_btn">Sign Up</button>
+            
+        
+             
+             <button  class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Sign Up</button>
             <span (click)="showLogin()">Already Have Account</span>
          </div>
         </form>
@@ -29,20 +32,20 @@
 
 
     <!-- Login Start -->
-    <div *ngIf="showLoginFlag" class="login__form">
-     <h1>Login Form</h1>
+    <div *ngIf="showLoginFlag" class="w-full bg-white rounded shadow-lg p-8 mt-24 m-4 md:max-w-sm md:mx-auto">
+     <h1 class="block w-full text-center text-grey-darkest mb-6">Login Form</h1>
         <span class="errorMsg">{{sellerAuthErr}}</span>
-        <form #sellerForm="ngForm" (ngSubmit)="login(sellerForm.value)"  class="seller_form">
-         <div class="form__group">
+        <form #sellerForm="ngForm" (ngSubmit)="login(sellerForm.value)">
+         <div class="block text-gray-700 text-sm font-bold mb-2">
           <label for="">Email</label>
-          <input type="text" ngModel name="email" placeholder="Enter email">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" ngModel name="email" placeholder="Enter email">
          </div>
-         <div class="form__group">
+         <div class="block text-gray-700 text-sm font-bold mb-2">
           <label for="">Password</label>
-          <input type="text" ngModel name="password" placeholder="Enter password">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" ngModel name="password" placeholder="Enter password">
          </div>
          <div class="button_div">
-             <button class="login_btn">Login</button>
+             <button class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Login</button>
              <span (click)="showSingUp()">Don't Have Account</span>
         </div>
             </form>
